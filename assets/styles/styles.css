@@ -1,0 +1,58 @@
+/* GENERAL */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf2f8;
+  font: 500 0.813rem Manrope, sans-serif;
+}
+
+.visually-hidden:not(:focus, :active) {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* ARTICLE-PREVIEW-COMPONENT */
+.article-preview-component {
+  max-width: 20.438rem;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article-image {
+  height: 12.5rem;
+  width: 100%;
+}
+
+.article-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.article-content {
+  padding-top: 2.3rem;
+  padding-left: 2rem;
+}
+
+.article-heading {
+  width: 91%;
+  color: #48556a;
+  font: 700 1rem Manrope, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.article-text {
+  width: 87%;
+  color: #6d7f97;
+  line-height: 1.5;
+}
