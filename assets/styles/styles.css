@@ -55,8 +55,8 @@ body {
   line-height: 1.5;
 }
 
-/* footer */
-.article-preview-component footer {
+/* default-footer */
+.default-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,4 +104,60 @@ body {
   border: 0;
   border-radius: 50%;
   cursor: pointer;
+}
+
+/* share-footer */
+
+/* TODO: Implement this part of code with TypeScript */
+.default-footer {
+  display: none;
+}
+
+.article-preview-component {
+  padding-bottom: 0;
+}
+
+.article-content {
+  margin-bottom: 1.31rem;
+}
+
+.share-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #48556a;
+  padding: 0.95rem 2rem;
+}
+
+.share-bar,
+.share-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.share-heading {
+  color: #9eafc2;
+  font: 500 0.813rem Manrope, sans-serif;
+  letter-spacing: 0.32rem;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.share-link {
+  height: 1.25rem;
+  width: 1.25rem;
+  cursor: pointer;
+}
+
+.share-facebook {
+  background: url("../images/icon-facebook.svg") center no-repeat;
+}
+
+.share-twitter {
+  background: url("../images/icon-twitter.svg") center no-repeat;
+}
+
+.share-pinterest {
+  background: url("../images/icon-pinterest.svg") center no-repeat;
 }
