@@ -29,6 +29,10 @@ body {
   overflow: hidden;
 }
 
+.article-preview-component.share-clicked {
+  padding: 0;
+}
+
 /* article-image */
 .article-image {
   height: 12.5rem;
@@ -61,6 +65,10 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+}
+
+.default-footer.share-clicked {
+  display: none;
 }
 
 .article-info {
@@ -107,26 +115,16 @@ body {
 }
 
 /* share-footer */
-
-/* TODO: Implement this part of code with TypeScript */
-.default-footer {
-  display: none;
-}
-
-.article-preview-component {
-  padding-bottom: 0;
-}
-
-.article-content {
-  margin-bottom: 1.31rem;
-}
-
 .share-footer {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   background-color: #48556a;
   padding: 0.95rem 2rem;
+}
+
+.share-footer.share-clicked {
+  display: flex;
 }
 
 .share-bar,
@@ -134,6 +132,9 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .share-heading {
@@ -145,6 +146,7 @@ body {
 }
 
 .share-link {
+  display: block;
   height: 1.25rem;
   width: 1.25rem;
   cursor: pointer;
