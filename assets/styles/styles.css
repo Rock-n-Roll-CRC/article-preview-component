@@ -7,6 +7,7 @@ body {
   gap: 1.5rem;
   background-color: #ecf2f8;
   font: 500 0.813rem Manrope, sans-serif;
+  padding: 0 2rem;
 }
 
 .visually-hidden:not(:focus, :active) {
@@ -162,4 +163,48 @@ body {
 
 .share-pinterest {
   background: url("../images/icon-pinterest.svg") center no-repeat;
+}
+
+/* DESKTOP MEDIA */
+@media all and (width >= 640px) {
+  .article-preview-component {
+    display: flex;
+    max-width: 45.6rem;
+    padding-bottom: 0;
+  }
+
+  .article-image {
+    height: 17.5rem;
+    width: 107%;
+  }
+
+  .container {
+    padding: 2rem 2.5rem 0;
+  }
+
+  .article-content {
+    padding: 0;
+    margin-bottom: 1.3rem;
+  }
+
+  .article-heading {
+    width: 98%;
+    font: 700 1.2rem Manrope, sans-serif;
+    line-height: 1.48;
+    margin-bottom: 0.8rem;
+  }
+
+  .default-footer {
+    padding: 0;
+  }
+}
+
+@media all and (width >= 640px) and (width <= 745px) {
+  .article-image {
+    height: 18.8rem;
+  }
+
+  .container {
+    padding: 2rem 2.5rem;
+  }
 }
